@@ -1,0 +1,25 @@
+body main section div.cards {
+    display: inline-block;
+    padding: 30px;
+    border-radius: 30px;
+    padding: 10px;
+    background-color: #2196F3;
+    margin: 30px;
+    align-items: center;
+    
+}
+body main div img {
+    border: 3px solid #2196F3;
+    height: 200px;
+    border-radius: 15px;
+}
+
+body main div p {
+    background-color: #000000;
+    border-radius: 20px;
+    font-size: 15px;
+    padding: 30px 0%;
+    border: 3px solid #2196F3;
+    text-align: center;
+    color: #ffffff;
+}
