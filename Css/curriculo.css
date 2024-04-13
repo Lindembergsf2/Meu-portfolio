@@ -1,0 +1,29 @@
+
+
+body main section {
+    padding: 60px;
+}
+body main div.curriculo-box h1{
+    color: #2196F3;
+    font-size: 40px;
+}
+
+body main div.curriculo-box h3 {
+    margin: 20px 0%;
+}
+
+body main div.curriculo-box {
+    color: #ffffff;
+    display: inline-block;
+    padding: 25px 4%;
+    margin: 25px;
+    border: 3px solid #2196F3;
+    border-radius: 40px;
+    text-align: center;
+
+}
+
+footer{
+    padding: 10px;
+    
+}
