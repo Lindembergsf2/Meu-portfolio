@@ -1,0 +1,14 @@
+{
+	"folders": [
+		{
+			"path": "../GitHub/Meu-portfolio"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Meu portfolio",
+		"liveServer.settings.port": 5501
+	}
+}
