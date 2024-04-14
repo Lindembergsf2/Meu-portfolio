@@ -30,7 +30,9 @@ body{
     color: #ffffff;
 }
 
-.flex
+@media (min-width: 943px){
+    
+}
 
 /* HEADER STYLE */
 
@@ -67,6 +69,12 @@ header nav ul li {
     cursor: pointer;
 }
 
+header nav ul li a.active {
+    color:#ffffff;
+}
+
+
+
 /* MAIN STYLE */
 
 section.initial-text {
@@ -102,6 +110,10 @@ section h1 span {
     font-size: 80px;
 }
 
+section div.txt-top-site p {
+    padding-right: 30px;
+}
+
 /* FOOTER STYLE */
 
 footer {
@@ -110,3 +122,44 @@ footer {
     margin-top: 250px;    
 }
 
+@media screen and (max-width: 1024px){
+    
+    .logo a img {
+        height: 100px;
+    }
+   body main section div.txt-top-site h1 {
+    font-size: 25px;
+   } 
+}
+
+@media screen and (max-width: 890px){
+
+    body header nav ul li{
+       padding: 0px 20px;
+    }
+    body main section div.flex {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 675px){
+    body header div.interface{
+        display: flex;
+        flex-direction: column;
+    }
+    body header nav ul li{
+        padding: 0px 7px;
+     }
+     body header div.logo img {
+        height: 130px;
+     }
+    }
+
+    @media screen and (max-width: 344px){
+       
+        body header nav ul li{
+            padding: 0px 4px;
+         
+        }
+    }

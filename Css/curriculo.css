@@ -22,8 +22,46 @@ body main div.curriculo-box {
     text-align: center;
 
 }
+body main div.curriculo-box p {
+    text-align: center;
+}
 
 footer{
     padding: 10px;
     
+}
+
+@media screen and (max-width: 1024px){
+    
+    .logo a img {
+        height: 100px;
+    }
+   body main section div.txt-top-site h1 {
+    font-size: 25px;
+   } 
+}
+
+@media screen and (max-width: 890px){
+
+    body header nav ul li{
+       padding: 0px 20px;
+    }
+    body main section div.flex {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 675px){
+    body header div.interface{
+        display: flex;
+        flex-direction: column;
+    }
+    body header nav ul li{
+        padding: 0px 7px;
+     }
+     body header div.logo img {
+        height: 130px;
+     }
+
 }
