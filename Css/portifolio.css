@@ -6,6 +6,7 @@ body main section div.cards {
     background-color: #2196F3;
     margin: 30px;
     align-items: center;
+    transition: 2s;
     
 }
 body main div img {
@@ -22,4 +23,13 @@ body main div p {
     border: 3px solid #2196F3;
     text-align: center;
     color: #ffffff;
+}
+
+body main div a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+body main div.cards:hover {
+    transform: scale(1.15);
 }
