@@ -34,6 +34,8 @@ body main div.cards:hover {
     transform: scale(1.15);
 }
 
+/* RESPONSIVE ADJUSTMENTS */
+
 @media screen and (max-width: 1024px){
     
     .logo a img {

@@ -31,6 +31,8 @@ footer{
     
 }
 
+/* RESPONSIVE ADJUSTMENTS */
+
 @media screen and (max-width: 1024px){
     
     .logo a img {
