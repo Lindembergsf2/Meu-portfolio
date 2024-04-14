@@ -63,6 +63,9 @@ footer{
      body header div.logo img {
         height: 130px;
      }
+     body main section{
+        padding: 20px;
+     }
 
 }
 
