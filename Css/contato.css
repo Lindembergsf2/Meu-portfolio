@@ -92,5 +92,32 @@ main section form ::placeholder {
      body header div.logo img {
         height: 130px;
      }
+     main section form input {
+        padding: 20px 10px;
+        width: 90%;
+        margin: 0 auto;
+     }
+     section div.form form div.submit-btn {
+        width: 90%;
+     }
+     main section form textarea {
+        width: 90%;
+        margin: 0 auto;
+    }
+    section div.form h1 {
+        font-size: 50px;
+    }
+    section div.form h1 span {
+        font-size: 50px;
+    }
 
+}
+
+@media screen and (max-width: 344px){
+       
+    body header nav ul li{
+        padding: 0px 4px;
+     
+    }
+    
 }

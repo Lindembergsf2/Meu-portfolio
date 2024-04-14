@@ -68,3 +68,11 @@ body main div.cards:hover {
      }
 
 }
+
+@media screen and (max-width: 344px){
+       
+    body header nav ul li{
+        padding: 0px 4px;
+     
+    }
+}
