@@ -147,6 +147,7 @@ footer {
     body header div.interface{
         display: flex;
         flex-direction: column;
+        padding: 40px 8%;
     }
     body header nav ul li{
         padding: 0px 7px;
@@ -154,12 +155,38 @@ footer {
      body header div.logo img {
         height: 130px;
      }
+     body main section div.txt-top-site h1{
+        font-size: 22px;
+     }
+}
+
+
+    @media screen and (max-width: 456px){
+        
+        body main section div.txt-top-site h1{
+            font-size: 19px;
+        }
     }
+
+    @media screen and (max-width: 392px){
+        body header div.interface{
+            padding: 40px 4%
+        }
+        body main section div.txt-top-site h1{
+            font-size: 17px;
+        }
+    }
+
 
     @media screen and (max-width: 344px){
        
+        body header div.interface{
+            padding: 40px 0%
+        }
+
         body header nav ul li{
             padding: 0px 4px;
          
         }
+    
     }
