@@ -170,7 +170,7 @@ footer {
         }
     }
 
-    @media screen and (max-width: 392px){
+    @media screen and (max-width: 410px){
         body header div.interface{
             padding: 40px 4%
         }
