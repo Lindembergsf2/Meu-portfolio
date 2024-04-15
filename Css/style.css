@@ -180,7 +180,7 @@ footer {
     }
 
 
-    @media screen and (max-width: 344px){
+    @media screen and (max-width: 374px){
        
         body header div.interface{
             padding: 40px 0%
