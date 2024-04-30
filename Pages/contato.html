@@ -53,10 +53,26 @@
             
                     <h1>Fale <span>Comigo.</span></h1>
                     <form action="">
-                        <input type="text" name="" id="" placeholder="Seu nome completo" required>
-                        <input type="text" name="" id="" placeholder="Seu e-mail" required>
-                        <input type="text" name="" id="" placeholder="Seu telefone: (xx) xxxxx-xxxx" required>
-                        <textarea name="" id="" cols="60" rows="10" placeholder="Sua mensagem" required></textarea>
+                        
+                        <div>
+                            <input class="required" type="text" name="" id="full_name" placeholder="Seu nome completo" required>
+                            <span class="span-required">O nome deve conter no mínimo 3 caracteres</span>
+                        </div>
+                        
+                        <div>
+                            <input class="required" type="email" name="" id="email_input" placeholder="Seu e-mail" required>
+                            <span class="span-required">Digite um e-mail válido</span>
+                        </div>
+                       
+                        <div>
+                            <input class="required" type="tel" name="" id="telephone" placeholder="Seu telefone: (xx) xxxxx-xxxx" maxlength="15" required>
+                            <span class="span-required">Digite um número de telefone válido</span>
+                        </div>
+                        
+                        <div>
+                            <textarea class="required" name="" id="text_box" cols="60" rows="10" placeholder="Sua mensagem" required></textarea>
+                        </div>
+
                         <div class="submit-btn"><input type="submit" value="ENVIAR"></div>
                     </form>
                 </div>
@@ -74,6 +90,8 @@
             
         </div>
     </footer>
+
+    <script src="/scripts/scripts.js"></script>
 
 </body>
 </html>

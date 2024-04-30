@@ -38,6 +38,13 @@ section div.form form div.submit-btn {
     
 }
 
+main section div span.span-required {
+    display: none ;
+    font-size: 12px;
+    margin: 3px 0 0 1px;
+    color: #ff0000;
+}
+
 main section form input {
     width: 100%;
     border: 0;
@@ -54,6 +61,7 @@ main section form textarea {
     border: 0;
     background-color: #6e6e6e;
     font-size: 18px;
+    width: 100%;
 }
 
 main section form ::placeholder {
