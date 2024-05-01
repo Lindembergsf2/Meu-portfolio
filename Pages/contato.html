@@ -52,10 +52,10 @@
                 <div class="form">
             
                     <h1>Fale <span>Comigo.</span></h1>
-                    <form action="">
+                    <form action="" onsubmit="event.preventDefault()">
                         
                         <div>
-                            <input class="required" type="text" name="" id="full_name" placeholder="Seu nome completo" required>
+                            <input class="required" type="text" name="" id="full_name" placeholder="Seu nome completo" minlength="3" required>
                             <span class="span-required">O nome deve conter no mínimo 3 caracteres</span>
                         </div>
                         
@@ -65,7 +65,7 @@
                         </div>
                        
                         <div>
-                            <input class="required" type="tel" name="" id="telephone" placeholder="Seu telefone: (xx) xxxxx-xxxx" maxlength="15" required>
+                            <input class="required" type="tel" name="" id="telephone" placeholder="Seu telefone: (xx) xxxxx-xxxx" minlength="14" maxlength="15" required>
                             <span class="span-required">Digite um número de telefone válido</span>
                         </div>
                         
@@ -73,7 +73,7 @@
                             <textarea class="required" name="" id="text_box" cols="60" rows="10" placeholder="Sua mensagem" required>Olá, tudo bem?</textarea>
                         </div>
 
-                        <div class="submit-btn"><input type="submit" value="ENVIAR"></div>
+                        <div class="submit-btn"><input id="submit_btn" type="submit" value="ENVIAR" onclick="enviarFormulario()"></div>
                     </form>
                 </div>
             </center>

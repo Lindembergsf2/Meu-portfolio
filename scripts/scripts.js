@@ -2,7 +2,8 @@ const form = document.querySelector("form");
 const input_area = document.querySelectorAll('.required');
 const spans = document.querySelectorAll('.span-required');
 const email_regex = /^[a-z0-9.]+@[a-z0-9]+\.[a-z]+?$/i;
-let isvalid = [true, true, true, true]
+let isvalid = [true, true, true]
+
 
 input_area[0].addEventListener("change", name_validate);
 
@@ -20,10 +21,10 @@ function remove_error(index){
 function name_validate(){
     if(input_area[0].value.length < 3){
         set_error(0);
-        isvalid[0] = false;
+        
     }else{
         remove_error(0);
-        isvalid[0] = true;
+        
     }
 }
 
@@ -32,10 +33,10 @@ input_area[1].addEventListener("change", email_validate);
 function email_validate(){
     if(email_regex.test(input_area[1].value)){
         remove_error(1);
-        isvalid[1] = true;
+        
     }else{
         set_error(1)
-        isvalid[1] = false;
+        
     }
 }
 
@@ -53,10 +54,10 @@ function mascaraTelefone(textoInputTelefone) {
 
     if(input_area[2].value.length === 14 || input_area[2].value.length === 15){
         remove_error(2);
-        isvalid[2] = true;
+        
     }else{
         set_error(2);
-        isvalid[2] = false;
+        
     }
 }
 
@@ -68,49 +69,36 @@ campoTelefone.addEventListener('input', function (e) {
     
 });
 
-input_area[0].addEventListener("change", name_validate);
 
-function textbox_validate(){
-    if(input_area[3].value.length < 3){
-        set_error(3);
-        isvalid[3] = false;
-    }else{
-        remove_error(3);
-        isvalid[3] = true;
-    }
-}
+function validarFormulario() {
+    const form = document.querySelector('form');
+    const inputs = form.querySelectorAll('input');
 
+    let isValid = true;
 
-function tudovalido(isvalid){
-    const quantidadeDeInputs = input_area.length
-    let quantidadeElementosValidos = 0
-
-    for(i = 0; i < isvalid.length; i++){
-        if(isvalid[i] === true){
-            quantidadeElementosValidos++
-        }else {
-            quantidadeElementosValidos--
+    inputs.forEach(input => {
+        if (!input.checkValidity()) {
+            input.classList.add('invalid');
+            isValid = false;
+        } else {
+            input.classList.remove('invalid');
         }
-    }
+    });
 
-    if(quantidadeDeInputs === quantidadeElementosValidos){
-         return true;
-    }else{
-        return false;
-    }
+    return isValid;
 }
 
 function enviarFormulario() {
-    if (tudovalido()) {
+    if (validarFormulario()) {
         enviarParaWhatsApp();
     }
 }
 
 function enviarParaWhatsApp() {
-    const nome = document.getElementById('input-nome').value;
-    const email = document.getElementById('input-email').value;
-    const telefone = document.getElementById('input-tel').value;
-    const mensagem = document.getElementById('input-msg').value;
+    const nome = document.getElementById('full_name').value;
+    const email = document.getElementById('email_input').value;
+    const telefone = document.getElementById('telephone').value;
+    const mensagem = document.getElementById('text_box').value;
 
     const texto = `Nome: ${nome}\nE-mail: ${email}\nTelefone: ${telefone}\nMensagem: ${mensagem}`;
     const textoCodificado = encodeURIComponent(texto);
@@ -119,3 +107,4 @@ function enviarParaWhatsApp() {
 
     window.open(url, '_blank');
 }
+
